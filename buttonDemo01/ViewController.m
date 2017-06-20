@@ -19,6 +19,11 @@
 - (IBAction)left;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnIcon;
+
+- (IBAction)plus;
+
+- (IBAction)minus;
+
 @end
 
 @implementation ViewController
@@ -52,6 +57,7 @@
     originFrame.origin.y += 10;
     
     self.btnIcon.frame = originFrame;
+    
     NSLog(@"down");
 }
 
@@ -60,6 +66,7 @@
     originFrame.origin.x += 10;
     
     self.btnIcon.frame = originFrame;
+    
     NSLog(@"right");
 }
 
@@ -68,6 +75,30 @@
     originFrame.origin.x -= 10;
     
     self.btnIcon.frame = originFrame;
+    
     NSLog(@"left");
+}
+
+- (IBAction)plus {
+    CGRect originFrame = self.btnIcon.frame;
+    
+//    originFrame.size.width += 10;
+//    originFrame.size.height += 10;
+
+    originFrame.size = CGSizeMake(originFrame.size.width + 10, originFrame.size.height + 10);
+    
+    self.btnIcon.frame = originFrame;
+    
+    NSLog(@"plus");
+}
+
+- (IBAction)minus {
+    CGRect originFrame = self.btnIcon.frame;
+    
+    originFrame.size = CGSizeMake(originFrame.size.width - 10, originFrame.size.height - 10);
+    
+    self.btnIcon.frame = originFrame;
+    
+    NSLog(@"minus");
 }
 @end
