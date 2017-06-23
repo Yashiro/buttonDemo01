@@ -33,15 +33,15 @@
                                     <action selector="up" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bUF-P1-iFq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g2n-Fr-64j" userLabel="right">
-                                <rect key="frame" x="120" y="282" width="48" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7xj-zs-uFl" userLabel="down">
+                                <rect key="frame" x="70" y="342" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="right_normal">
+                                <state key="normal" backgroundImage="bottom_normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted" backgroundImage="right_highlighted"/>
+                                <state key="highlighted" backgroundImage="bottom_highlighted"/>
                                 <connections>
-                                    <action selector="right" destination="vXZ-lx-hvc" eventType="touchUpInside" id="icC-OE-xba"/>
+                                    <action selector="down" destination="vXZ-lx-hvc" eventType="touchUpInside" id="521-AB-QEX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="92h-uu-fWx" userLabel="left">
@@ -53,6 +53,17 @@
                                 <state key="highlighted" backgroundImage="left_highlighted"/>
                                 <connections>
                                     <action selector="left" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tvc-t6-NV7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g2n-Fr-64j" userLabel="right">
+                                <rect key="frame" x="120" y="282" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="right_normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="right_highlighted"/>
+                                <connections>
+                                    <action selector="right" destination="vXZ-lx-hvc" eventType="touchUpInside" id="icC-OE-xba"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6FJ-ZR-n22" userLabel="plus">
@@ -75,17 +86,6 @@
                                 <state key="highlighted" backgroundImage="minus_highlighted"/>
                                 <connections>
                                     <action selector="minus" destination="vXZ-lx-hvc" eventType="touchUpInside" id="A3f-1i-mOy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7xj-zs-uFl" userLabel="down">
-                                <rect key="frame" x="70" y="342" width="48" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="bottom_normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="bottom_highlighted"/>
-                                <connections>
-                                    <action selector="down" destination="vXZ-lx-hvc" eventType="touchUpInside" id="521-AB-QEX"/>
                                 </connections>
                             </button>
                         </subviews>
